@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+    <div class="form-container">
+        <div class="signin-signup">
+            <form  class="sign-in-form" method="post" action="{% url 'home' %}">
+                {% csrf_token %}
+
+             <img src="{% static 'assets/images/logo.png' %}" />
+            
+                <h2 class="title">User Login</h2>
+                 <div class="form-group">
+        {% if messages %}
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+
+        {% endif %}
+        </div>
+                <div class="input-field">
+                    <i class="fas fa-phone"></i>
+                    <input type="text" placeholder="Username" name="username" autocomplete="off" required />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password"  placeholder="Password" name="password" autocomplete="off" required />
+                </div>
+                
+                <input type="submit" value="Login" name="login" class="btn solid" />
+                <p class="social-text">Connect with us on</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"> <i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+   
+<div class="panels-container">
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>My Digital Property Protection</h3>
+                
+                <p>Intellectual Property Integrity</p>
+                <p>Encrypt and Embed Your Signatures inside your Digital Content</p>
+               
+                <a class="dropdown-item" href="{% url 'register' %}"><button class="btn transparent" id="sign-up-btn">Sign up</button></a> 
+            </div>
+            <img src="{% static 'image/log.svg' %}" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+            <div class="content">
+                <h3>Are you a New User?</h3>
+                <p>Kindly create your account</p>
+                <button class="btn transparent" id="sign-in-btn">Sign in</button>
+            </div>
+            <img src="{% static 'image/register.svg' %}" class="image" alt="" />
+        </div>
+    </div>
+{% endblock%}

@@ -1,0 +1,25 @@
+{% extends 'based.html' %}
+{% block content %}
+
+<div class="card-body">
+<form id="formAuthentication" class="mb-3"  method="POST" enctype="multipart/form-data">  
+  {% csrf_token %}  
+    	  
+  <div class="mb-3">
+ 
+    <div class="col-sm-5 text-center text-sm-left">
+
+        <label class="form-label" for="basic-icon-default-fullname">Property Image: Select the image you wish to verify ownership</label>
+    <input class="form-control" type="file" id="formFile" name="proimage" />
+    </div>
+</div>
+
+
+<button type="submit" class="btn btn-sm btn-outline-primary">Verify Property</button>
+</form>
+</div>
+{% if img_obj %}  
+<h3>Succesfully uploaded </h3>  
+{% endif %}  
+
+{% endblock content %} 

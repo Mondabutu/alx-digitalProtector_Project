@@ -1,0 +1,32 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+    <title>Digital Property Protection</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+	
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  
+   <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/images/favicon/apple-touch-icon.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/images/favicon/favicon-32x32.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/favicon/favicon-16x16.png' %}">
+<link rel="manifest" href="{% static 'assets/images/favicon/site.webmanifest' %}">
+
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+		
+    	<link rel="stylesheet" href="{% static 'asset/vendor/css/core.css' %}" /> 
+		<script src="https://kit.fontawesome.com/2e798a4fbc.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container">		
+			{% block content %}
+
+			{% endblock%}
+		</div>
+		<script src="{% static 'app.js' %}"></script>
+	</body>
+</html>

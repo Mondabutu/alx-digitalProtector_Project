@@ -1,0 +1,20 @@
+{% extends 'based.html' %}
+{% block content %}
+
+<div class="card-body">
+<form id="formAuthentication" class="mb-3"  method="POST" enctype="multipart/form-data">  
+  {% csrf_token %}  
+    	  
+  <div class="mb-3">
+  {{ form.as_p }}
+</div>
+
+
+<button type="submit" class="btn btn-sm btn-outline-primary">Embed Signature in Property</button>
+</form>
+</div>
+{% if img_obj %}  
+<h3>Succesfully uploaded </h3>  
+{% endif %}  
+
+{% endblock content %} 

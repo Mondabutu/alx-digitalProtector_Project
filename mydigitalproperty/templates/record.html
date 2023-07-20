@@ -1,0 +1,39 @@
+{% extends 'based.html' %}
+{% block content %}
+
+<div class="card">
+    <div class="table-responsive text-nowrap">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>S/N</th>
+            <th>Client Name</th>
+            <th>Digital Property</th>
+            <th>Created on</th>
+            <th>Property</th>
+          </tr>
+        </thead>
+        <tbody class="table-border-bottom-0">
+          
+       {% for owners in property_lists %}
+          <tr>
+          
+              <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{forloop.counter}}</strong></td>
+              <td>{{owners.owner}}</td>
+              <td>{{owners.digital_property}}</td>
+              <td>{{owners.created_at}}</td>
+             <td><a href="../media/{{owners.PropertyImage}}"> View Property</a></td>
+      
+        </tr>
+        
+       {% endfor %} 
+        </tbody>
+      </table>
+    </div>
+</div>
+
+
+
+
+{% endblock content %}
+

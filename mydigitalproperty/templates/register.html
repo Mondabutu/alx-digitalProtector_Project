@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="form-container">
+    <div class="signin-signup">
+<br/>
+
+<form  method="POST" action="">
+	{% csrf_token %}
+	{% if form.errors %}
+			<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			  Your Form Has Errors
+			  {% for field in form %}
+			  	{% if field.errors %}
+			  		{{ field.errors }}
+			  	{% endif %}
+			  {% endfor %}
+			  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+		{% endif %}
+
+	{{ form.as_p }}
+
+	<br/>
+    <button type="submit" class="btn btn-secondary">Register</button>
+	</form>
+
+
+    </div>
+</div>
+<div class="panels-container">
+    <div class="panel left-panel">
+        <div class="content">
+            <h3>My Digital Property Protection</h3>
+            
+            <p>Intellectual Property Integrity</p>
+            <p>Encrypt and Embed Your Signatures inside your Digital Content</p>
+           
+            <a class="dropdown-item" href="{% url 'home' %}"><button class="btn transparent" id="sign-up-btn">Sign in</button></a> 
+        </div>
+        <img src="{% static 'image/log.svg' %}" class="image" alt="" />
+    </div>
+    
+</div>
+{% endblock %}
