@@ -28,12 +28,14 @@ def home(request):
 
 
 
+# Create logout user.
 def logout_user(request):
 	logout(request)
 	messages.success(request, "You Have Been Logged Out...")
 	return redirect('home')
 
 
+# Register user form.
 def register_user(request):
 	if request.method == 'POST':
 		form = SignUpForm(request.POST)
@@ -52,6 +54,7 @@ def register_user(request):
 
 	return render(request, 'register.html', {'form':form})
 
+# Add record.
 def dashboard_user(request):  
 	if request.method == 'POST':  
 		form = DigitRecordform(request.POST, request.FILES)  
@@ -63,6 +66,8 @@ def dashboard_user(request):
 				owner  = cd['owner'], 
 				PropertyImage  = cd['PropertyImage'],
 			)
+            
+# Add signature or watermark to image.
 			def save(self, *args, **kwargs):
 				super().save(*args, **kwargs)
 				photo = Image.open(DigitalRecord(cd['PropertyImage']))
@@ -100,6 +105,7 @@ def property_lists(request):
 		return redirect('home')
 
 
+# Verify image owner.
 def verify_user(request):
 	if request.method == 'POST':  
 		
