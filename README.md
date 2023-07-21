@@ -3,10 +3,10 @@
 # Project Name: Digital Image Protection Management System
 
 # Introduction
-*This project helps digital image creators like Architects, photographers, Informatics, and Logo Designers, amongst others to protect their intellectual properties while rendering their services.
-*The project was carried out by me out of my passion to solve proprietary problems. I have designed several logos, Informatics, and Graphics designs and have seen my work replicated without my approval.
-*I saw this portfolio project as a time to research and find solutions for not just myself but others as well.
-*They are several approaches to solving data integrity issues but Invisible watermarking protection captured my interest.
+This project helps digital image creators like Architects, photographers, Informatics, and Logo Designers, amongst others to protect their intellectual properties while rendering their services.
+The project was carried out by me out of my passion to solve proprietary problems. I have designed several logos, Informatics, and Graphics designs and have seen my work replicated without my approval.
+I saw this portfolio project as a time to research and find solutions for not just myself but others as well.
+They are several approaches to solving data integrity issues but Invisible watermarking protection captured my interest.
 Read more here>...  https://mondabutu.hashnode.dev/digital-image-protection-management-system
 
 
@@ -44,4 +44,6 @@ run application on http://127.0.0.1:8000/
 
 # Licensing
 This application is open for modification. However, you can tag me or share your idea on how to make this application better. Nevertheless, i will keep modifying the application to make it better .
-https://drive.google.com/file/d/1TCJUwVkwdYbS8JALD6IRHdK6oMAsp4oP/view?usp=sharing
+
+#
+![] https://drive.google.com/file/d/1TCJUwVkwdYbS8JALD6IRHdK6oMAsp4oP/view?usp=sharing
