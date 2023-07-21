@@ -1,7 +1,8 @@
-#Alx-digitalProtector Project Task
-##Project Name: Digital Image Protection Management System
+# Alx-digitalProtector Project Task
 
-####Introduction
+# Project Name: Digital Image Protection Management System
+
+# Introduction
 *This project helps digital image creators like Architects, photographers, Informatics, and Logo Designers, amongst others to protect their intellectual properties while rendering their services.
 *The project was carried out by me out of my passion to solve proprietary problems. I have designed several logos, Informatics, and Graphics designs and have seen my work replicated without my approval.
 *I saw this portfolio project as a time to research and find solutions for not just myself but others as well.
@@ -9,7 +10,7 @@
 Read more here>...  https://mondabutu.hashnode.dev/digital-image-protection-management-system
 
 
-#Installation
+# Installation
 ### Try It On Your Machine :computer:
 
 ```bash
@@ -27,7 +28,7 @@ python manage.py runserver
 run application on http://127.0.0.1:8000/
 ```
 
-##Usage
+# Usage
 *Click on Signup and fill the signup form to get enroll
 *Provide the Username and password on the Login page to access the application
 * Register your images through the Add property Link. Load your image into the form and embed the image with your watermark (signatures)
@@ -35,11 +36,12 @@ run application on http://127.0.0.1:8000/
 * Use the view propery to see all saved records
 * Use the verify property button to verify any image ownership
 
-#Contributing
+# Contributing
 1. Monday Abutu Idakwo [Github](https://github.com/mondabutu) / [Twitter](https://mondabutu.com/twitter)
 
 # Related projects
 1. Image Watermarking
-#Licensing
+
+# Licensing
 This application is open for modification. However, you can tag me or share your idea on how to make this application better. Nevertheless, i will keep modifying the application to make it better .
 https://drive.google.com/file/d/1TCJUwVkwdYbS8JALD6IRHdK6oMAsp4oP/view?usp=sharing
