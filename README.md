@@ -43,6 +43,7 @@ run application on http://127.0.0.1:8000/
 1. Image Watermarking
 
 # Licensing
-This application is open for modification. However, you can tag me or share your idea on how to make this application better. Nevertheless, i will keep modifying the application to make it better .
+This application is open for modification. However, you can tag me or share your idea on how to make this application better. Nevertheless, i will keep modifying the application to make it better.
+
 
 <a href="https://yourimageshare.com/ib/5EAOdaqZ3X"><img src="https://yourimageshare.com/ib/5EAOdaqZ3X.webp" title="Image - 5EAOdaqZ3X - yourimageshare.com" alt="Image - 5EAOdaqZ3X - yourimageshare.com"></a><center><a target="_blank" href="https://yourimageshare.com"><small>Image hosting</small></a></center>
